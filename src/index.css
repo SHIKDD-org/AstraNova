@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Optional: smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles - Hidden by default, shown on hover */
+.scrollbar-thin {
+  scrollbar-width: none;
+}
+
+.scrollbar-thin:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #00FF00 #000000;
+}
+
+/* Webkit Scrollbar (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Show scrollbar on hover */
+*:hover::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: #00FF00;
+}
+
+*:hover::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+}
+
+/* Firefox Scrollbar - hidden by default */
+* {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #00FF00 #000000;
+}
+
+/* Hide scrollbar on body but keep scroll functionality */
+body {
+  overflow-x: hidden;
+}
+
+/* Custom cursor hide for drag areas */
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grab:active {
+  cursor: grabbing;
+}
+
+/* Smooth scroll for hackathon gallery */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
